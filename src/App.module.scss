@@ -1,0 +1,90 @@
+@import "./styles/variables";
+
+.App {
+  width: 99vw;
+  background-color: $bg-primary-color;
+  font-family: $principal-font;
+  text-align: center;
+}
+
+.title {
+  margin: 20px 0 50px 0;
+  width: 99vw;
+}
+
+h1,
+h2 {
+  display: inline;
+  font-weight: 300;
+  margin: 10px;
+}
+
+h3 {
+  margin-bottom: -40px;
+}
+
+.mainConteiner {
+  width: 99vw;
+  height: fit-content;
+  display: flex;
+}
+
+.mainSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.welcomeGif {
+  margin-left: 10%;
+  margin-top: -1%;
+  width: 70vw;
+  height: 80vh;
+  border: 5px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mainConteiner {
+    width: 99vw;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .mainSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 678px) and (min-width: 320px) {
+  .mainConteiner {
+    width: 99vw;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  h1,
+  h2 {
+    display: block;
+  }
+  .mainSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcomeGif {
+    display: none;
+  }
+}

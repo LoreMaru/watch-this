@@ -1,0 +1,42 @@
+const movieGenres = [
+  { tag: "Action", code: "&with_genres=28" },
+  { tag: "Adventure", code: "&with_genres=12" },
+  { tag: "Animation", code: "&with_genres=16" },
+  { tag: "Comedy", code: "&with_genres=35" },
+  { tag: "Crime", code: "&with_genres=80" },
+  { tag: "Documentary", code: "&with_genres=99" },
+  { tag: "Drama", code: "&with_genres=18" },
+  { tag: "Family", code: "&with_genres=10751" },
+  { tag: "Fantasy", code: "&with_genres=14" },
+  { tag: "History", code: "&with_genres=36" },
+  { tag: "Horror", code: "&with_genres=27" },
+  { tag: "Music", code: "&with_genres=10402" },
+  { tag: "Mystery", code: "&with_genres=9648" },
+  { tag: "Romance", code: "&with_genres=10749" },
+  { tag: "SciFi", code: "&with_genres=878" },
+  { tag: "TV-Movie", code: "&with_genres=10770" },
+  { tag: "Thriller", code: "&with_genres=53" },
+  { tag: "War", code: "&with_genres=10752" },
+  { tag: "Western", code: "&with_genres=37" },
+];
+
+const tvGenres = [
+  { tag: "Action/Adventure", code: "&with_genres=10759" },
+  { tag: "Animation", code: "&with_genres=16" },
+  { tag: "Comedy", code: "&with_genres=35" },
+  { tag: "Crime", code: "&with_genres=80" },
+  { tag: "Documentary", code: "&with_genres=99" },
+  { tag: "Drama", code: "&with_genres=18" },
+  { tag: "Family", code: "&with_genres=10751" },
+  { tag: "Kids", code: "&with_genres=10762" },
+  { tag: "Mystery", code: "&with_genres=9648" },
+  { tag: "News", code: "&with_genres=10763" },
+  { tag: "Reality", code: "&with_genres=10764" },
+  { tag: "Sci-Fi/Fantasy", code: "&with_genres=10765" },
+  { tag: "Soap", code: "&with_genres=10766" },
+  { tag: "Talk", code: "&with_genres=10767" },
+  { tag: "War/Politics", code: "&with_genres=10768" },
+  { tag: "Western", code: "&with_genres=37" },
+];
+
+export { movieGenres, tvGenres };
