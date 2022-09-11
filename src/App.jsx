@@ -57,8 +57,13 @@ function App() {
       <div className={styles.title}>
         <h2>Don't know what to watch? </h2>
         <h1>Watch This!</h1>
-        {topRatedBtn == true && <h3>Top Rated</h3>}
-        {popularBtn == true && <h3>Most Popular</h3>}
+        {topRatedBtn == true && (
+          <h3>Top Rated {switchContent.toUpperCase()}</h3>
+        )}
+        {popularBtn == true && (
+          <h3>Most Popular {switchContent.toUpperCase()}</h3>
+        )}
+        {searchBtn == true && <h3>Search a {switchContent.toUpperCase()}</h3>}
       </div>
       <div className={styles.mainConteiner}>
         <div className={styles.side}>
