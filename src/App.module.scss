@@ -32,11 +32,11 @@ h3 {
 .mainSection {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .welcomeGif {
-  margin-left: 10%;
+  margin-left: 30%;
   margin-top: -1%;
   width: 70vw;
   height: 80vh;
@@ -53,13 +53,22 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
   }
   .mainSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .welcomeGif {
+    margin: 0;
+    margin-top: -1%;
+
+    height: 50vh;
+    border: 5px solid white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.65);
   }
 }
 
