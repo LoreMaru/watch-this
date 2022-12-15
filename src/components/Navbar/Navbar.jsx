@@ -12,7 +12,7 @@ const Navbar = ({
   const { randomBtn, searchBtn, topRatedBtn, popularBtn } = active;
 
   const randomBtnFn = () => {
-    if (randomBtn == true) {
+    if (randomBtn === true) {
       setActive((prev) => ({ ...prev, randomBtn: false }));
     } else {
       setActive({
@@ -24,7 +24,7 @@ const Navbar = ({
     }
   };
   const searchBtnFn = () => {
-    if (searchBtn == true) {
+    if (searchBtn === true) {
       setActive((prev) => ({ ...prev, searchBtn: false }));
     } else {
       setActive({
@@ -43,7 +43,7 @@ const Navbar = ({
     }
   };
   const topRatedBtnFn = () => {
-    if (topRatedBtn == true) {
+    if (topRatedBtn === true) {
       setActive((prev) => ({ ...prev, topRatedBtn: false }));
     } else {
       setActive({
@@ -62,7 +62,7 @@ const Navbar = ({
     }
   };
   const popularBtnFn = () => {
-    if (popularBtn == true) {
+    if (popularBtn === true) {
       setActive((prev) => ({ ...prev, popularBtn: false }));
     } else {
       setActive({
@@ -75,7 +75,7 @@ const Navbar = ({
   };
 
   const switchBtnFn = () => {
-    if (switchContent == "movie") {
+    if (switchContent === "movie") {
       setSwitchContent("tv");
     } else {
       setSwitchContent("movie");

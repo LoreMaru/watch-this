@@ -4,6 +4,7 @@ import RandomMovieCard from "./components/RandomMovieCard";
 import GenericMovieCard from "./components/GenericMovieCard";
 import MiniCardConteiner from "./components/MiniCardConteiner/MiniCardConteiner";
 import gif from "./assets/gifWatch.gif";
+import gifMobile from "./assets/gifMobile.gif";
 import styles from "./App.module.scss";
 import { useState, useEffect } from "react";
 import { GET } from "../src/utils/api.js";
@@ -33,10 +34,10 @@ function App() {
 
   useEffect(() => {
     if (
-      randomBtn == false &&
-      searchBtn == false &&
-      topRatedBtn == false &&
-      popularBtn == false
+      randomBtn === false &&
+      searchBtn === false &&
+      topRatedBtn === false &&
+      popularBtn === false
     ) {
       setActive((prev) => ({ ...prev, welcome: true }));
     }
@@ -57,13 +58,13 @@ function App() {
       <div className={styles.title}>
         <h2>Don't know what to watch? </h2>
         <h1>Watch This!</h1>
-        {topRatedBtn == true && (
+        {topRatedBtn === true && (
           <h3>Top Rated {switchContent.toUpperCase()}</h3>
         )}
-        {popularBtn == true && (
+        {popularBtn === true && (
           <h3>Most Popular {switchContent.toUpperCase()}</h3>
         )}
-        {searchBtn == true && <h3>Search a {switchContent.toUpperCase()}</h3>}
+        {searchBtn === true && <h3>Search a {switchContent.toUpperCase()}</h3>}
       </div>
       <div className={styles.mainConteiner}>
         <div className={styles.side}>
@@ -82,7 +83,7 @@ function App() {
               <RandomMovieCard switchContent={switchContent} />
             </>
           )}
-          {searchBtn == true && (
+          {searchBtn === true && (
             <>
               <Form
                 mainCardData={mainCardData}
@@ -92,7 +93,7 @@ function App() {
               />
             </>
           )}
-          {topRatedBtn == true && (
+          {topRatedBtn === true && (
             <>
               <MiniCardConteiner
                 cardData={movieLists.topRated}
@@ -106,7 +107,7 @@ function App() {
               />
             </>
           )}
-          {popularBtn == true && (
+          {popularBtn === true && (
             <>
               <MiniCardConteiner
                 cardData={movieLists.popular}
@@ -121,11 +122,18 @@ function App() {
             </>
           )}
 
-          {randomBtn == false &&
-          searchBtn == false &&
-          topRatedBtn == false &&
-          popularBtn == false ? (
-            <img src={gif} alt="welcomeGif" className={styles.welcomeGif} />
+          {randomBtn === false &&
+          searchBtn === false &&
+          topRatedBtn === false &&
+          popularBtn === false ? (
+            <>
+              <img src={gif} alt="welcomeGif" className={styles.welcomeGif} />
+              <img
+                src={gifMobile}
+                alt="welcomeGif"
+                className={styles.welcomeGifMobile}
+              />
+            </>
           ) : (
             <></>
           )}
