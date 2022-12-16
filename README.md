@@ -1,7 +1,6 @@
 # Watch This!
 
-Are you sitting on the couch and don't know what to watch? "`Watch This!`" is here for you! Get inspired by a randomly chosen movie.
-Still unsatisfied? Reroll to find the right movie for you or check out our lists (most popular and top rated)
+Are you sitting on the sofa and don't know what to watch? "Watch this!" is here for you! Get inspired by a randomly chosen movie, you can make a raise to find the right movie for you. Still not satisfied?  Do a search (by title or genre) or check out our lists (most popular and top rated). Do you prefer TV series? No problem, click on the switch and and continue your search
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
